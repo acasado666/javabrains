@@ -78,7 +78,8 @@
         background-image: url(img/bg2.png);
     }
     
-    .myp {
+    .myp, 
+    .post-body-content p{
    font-family: 'Lora', serif;
    font-size: 19px;
    padding:5px;
