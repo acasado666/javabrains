@@ -26,7 +26,9 @@ $(document).ready(function() {
       $('.watch-next-text').replaceWith("<h3 class='text-left'>&nbsp; You have reached the last video of this course.</h3>")
    }
    else {
-      $('#nextVname').prepend(map[vno].name);   
+      $('#nextVname').prepend(map[vno].name); 
+      $('#watchnext-link').attr("href", map[vno].url);
+      $('#watchnext-desc').append(map[vno].desc);
    }
    
    
@@ -46,6 +48,7 @@ $(document).ready(function() {
    else {
       $('#nextCourseNav').append("<strong>" + map[vno].name + "</strong>");
       $('#nextCourseNav').append("<br/> Tutorial: " + (vno+1));
+      
    }
    
    var pageStart = parseInt(vno, 10) - 4;
