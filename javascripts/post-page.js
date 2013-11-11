@@ -6,7 +6,7 @@ $(document).ready(function() {
    var vno_title;
    
    for (i in courseContent.bindings) {
-     if($.trim(loc) == courseContent.bindings[i].url) {
+     if($.trim(loc).toLowerCase().indexOf(courseContent.bindings[i].url) >= 0) {
         vno = i;
      }
    }
