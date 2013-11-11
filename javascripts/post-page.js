@@ -40,6 +40,7 @@ $(document).ready(function() {
    else {
       $('#prevCourseNav').append("<strong>" + map[vno-2].name + "</strong>");
       $('#prevCourseNav').append("<br/> Tutorial: " + (vno-1));
+      $('#vprev-nav').attr("href", map[vno-2].url);
    }
    
    if (vno == vcount) {
@@ -48,6 +49,7 @@ $(document).ready(function() {
    else {
       $('#nextCourseNav').append("<strong>" + map[vno].name + "</strong>");
       $('#nextCourseNav').append("<br/> Tutorial: " + (vno+1));
+      $('#vnext-nav').attr("href", map[vno].url);
       
    }
    
